@@ -1,50 +1,107 @@
 # Student Management System
 
-A web-based application built with PHP and MySQL designed to streamline student data management. This project provides an interface to view, add, edit, and delete student records, manage user authentication, and control system navigation.
+A web-based student management system developed using **PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap**.
+
+The application provides an administrator interface for managing student records through a database-driven web application.
 
 ---
 
-## Features
+## 🚀 Tech Stack
 
-- **User Authentication**: Secure login and logout functionality for system access.
-- **Dashboard**: Centralized hub displaying system overviews and key navigation links.
-- **Student CRUD Operations**:
-  - **Create**: Add new student profiles with required details.
-  - **Read**: View list of all registered students and detailed profiles.
-  - **Update**: Edit existing student records.
-  - **Delete**: Remove student entries from the system.
-- **Password Utility**: Includes a utility script (`make_password.php`) for generating hashed passwords.
+* **PHP**
+* **MySQL**
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* **Bootstrap**
 
 ---
 
-## Tech Stack
+## 📌 Project Features
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: PHP
-- **Database**: MySQL
+### 🔐 Administrator Authentication
+
+* Administrator login and logout
+* PHP session-based authentication
+* Protected application pages
+* Password hashing and verification
+
+### 👨‍🎓 Student Management
+
+The system supports:
+
+* Add student records
+* View student records
+* Edit student records
+* Delete student records
+* Search students
+
+### 🔎 Student Search
+
+Students can be searched using information such as:
+
+* Student ID
+* Name
+* Email
+* Course
+
+### 🗄️ Database Integration
+
+The application uses **MySQL** for persistent storage of student information.
+
+Prepared SQL statements are used for database operations.
 
 ---
 
-## Directory Structure
+## 🏗️ Application Structure
 
-```text
-StudentManagementSystem/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
-├── config/
-│   └── database.php
-├── students/
-│   ├── add.php
-│   ├── delete.php
-│   ├── edit.php
-│   └── view.php
-├── dashboard.php
-├── database.sql
-├── index.php
+```text id="q3u0k8"
+StudentManagementSystem
+│
 ├── login.php
 ├── logout.php
-├── make_password.php
-└── README.md
+├── dashboard.php
+│
+├── students
+│   ├── add.php
+│   ├── edit.php
+│   ├── delete.php
+│   └── view.php
+│
+├── config
+│
+├── assets
+│   ├── css
+│   └── js
+│
+└── database.sql
+```
+
+---
+
+## 🔑 Authentication
+
+The application implements administrator authentication using PHP sessions.
+
+Password hashing and verification are used for handling administrator credentials.
+
+Authenticated sessions are required to access protected management functionality.
+
+---
+
+## 🧩 CRUD Operations
+
+The application implements the four fundamental database operations:
+
+| Operation | Functionality                   |
+| --------- | ------------------------------- |
+| Create    | Add new student records         |
+| Read      | View and search student records |
+| Update    | Edit existing student records   |
+| Delete    | Remove student records          |
+
+---
+
+## 🗄️ Database
+
+The project includes a SQL database script
